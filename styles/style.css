@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("..//fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("..//fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("..//fonts/ptsans-400.woff2") format("woff2");
+  }
+  
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("..//fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+body {
+    font-family: "PT Sans" , sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000
+    background-color: #FFFFFF;
+  }
+ .main-header {
+     background-color: #FFFFFF;
+     color: #000000;
+ }
+ .navigation-link {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+ }
+ .navigation-link-user {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+ }
+ .navigation-button {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: solid #756257;
+    border-radius: 4px;
+    background-color:  #756257;
+   
+ }
+.main-background{
+    background-image: url(..//images/jpeg/index-background.jpg);
+    background-color: #000000;
+    color: #FFFFFF;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 485px;
+}
+h1 , .advantages-block{
+    text-align: center;
+
+}
+.advantages-list , .advantages-list-icons {
+  list-style-type: none;
+}
+.advantages-item:nth-child(1) {
+    background-color: #FFFFFF;
+    color:#000000;
+    text-align: center;
+}
