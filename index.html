@@ -32,7 +32,7 @@
    </header>
    <aside class="main-background">
     <figure class="main-background-block">
-     <div class="main-img"><img class="main-sedona-description" src="images/svg/welcome.svg" width="458" height="352" alt="Welcome to the georgeous Sedona because the grand Canyon sucks!"></div>
+     <img class="main-sedona-description" src="images/svg/welcome.svg" width="458" height="352" alt="Welcome to the georgeous Sedona because the grand Canyon sucks!">
     </figure>
     </aside>
 <main class="main-content">
@@ -41,17 +41,18 @@
             заслуживающий большего!</h1>
             <p class="advantages-block">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="advantages-list">
+        <ol class="advantages-list">
          <li class="advantages-item">
-           <h3 class="advantages-title-white">Настоящий городок</h3>
+          <div class="container-text-first">
+          <h3 class="advantages-title-white">Настоящий городок</h3>
            <p class="advantages-numbers-white">— №1 —</p>
            <p class="advantages-description-white">Седона — не аттракцион для туристов, там течёт 
             своя жизнь</p>
-            <img class="town" src="images/jpeg/true-city.jpg" width="800" height="384" alt="Город Седона">
-            </li>
-            </ul>
-
-            <ul class="advantages-list-icons">
+            </div>
+            <div class="container-img-first"><img class="town" src="images/jpeg/true-city.jpg" width="800" height="384" alt="Город Седона"></div>
+          </li>
+            
+          <ul class="advantages-list-icons">
                 <li class="advantages-icons">
                 <img class="hotel" src="images/svg/icon-house.svg" width="75" height="72" alt="Иконка">
                 <h4 class="advantages-title-icons">Жильё</h4>
@@ -74,12 +75,12 @@
                    производства!</p>
               </li>
           </ul>
-        <ul class="advantages-list">
-         <li class="advantages-item">
-              <h3 class="advantages-title-white">Там есть мост дьявола</h3>
+          <li class="advantages-item">
+            <div class="container-img-second"><img class="bridge" src="images/jpeg/bridge-devil.jpg" width="800" height="384" alt="Мост Дьявола"></div>
+            <div class="container-text-second"><h3 class="advantages-title-white">Там есть мост дьявола</h3>
               <p class="advantages-numbers-white">— №2 —</p>
               <p class="advantages-description-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-               <img class="bridge" src="images/jpeg/bridge-devil.jpg" width="800" height="384" alt="Мост Дьявола">
+            </div>
                </li>
           <li class="advantages-item-blue">
                 <h3 class="advantages-title">Небольшая
@@ -99,13 +100,13 @@
                 <p class="advantages-numbers">— №5 —</p>
                 <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
                  </li>
-                 </ul>
+                 </ol>
       </section>
     </main>
-      <section class="selection-hotel"> 
+      <section class="booking"> 
         <h2 class="visually-hidden">Форма выбора отеля</h2>
-        <p class="selection-head">Заинтересовались?</p>
-        <p class="selection-description">Укажите предполагаемые даты поездки, <br>
+        <p class="booking-head">Заинтересовались?</p>
+        <p class="booking-description">Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в Седоне </p>
           <a class="button button-modal" href="modalwindow.html">Поиск гостиницы в седоне</a>
       </section>

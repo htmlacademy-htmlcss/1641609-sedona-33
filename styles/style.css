@@ -87,7 +87,7 @@ text-transform: uppercase
     background-size: 100% auto;
     height: 485px;
 }
-.main-img {
+.main-background-block {
   text-align: center;
 }
 .main-header-text{
@@ -185,7 +185,7 @@ color: #333333;
   text-align: center; 
   color: #333333;
 }
-.selection-head {
+.booking-head {
 font-weight: bold;
 font-size: 30px;
 line-height: 36px;
@@ -193,7 +193,7 @@ text-align: center;
 text-transform: uppercase;
 color: #000000;
 }
-.selection-description {
+.booking-description {
 font-weight: normal;
 font-size: 22px;
 line-height: 26px;
