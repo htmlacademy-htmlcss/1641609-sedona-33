@@ -34,7 +34,7 @@ body {
     font-size: 22px;
     line-height: 26px;
     color: #000000;
-    background-color: #FFFFFF;
+    background-color:#87CEFA;
   }
 .button {
 font-style: normal;
@@ -89,6 +89,9 @@ text-transform: uppercase
 }
 .main-background-block {
   text-align: center;
+}
+.main-content {
+  background-color: #FFFFFF;
 }
 .main-header-text{
  font-size: 30px;
@@ -145,17 +148,15 @@ color: #FFFFFF;
 display:block;
 margin:auto;
 }
-.advantages-item{
-  background-color: #83B3D3;
+.advantages-item {
+ background-color: #83B3D3;
 }
-
 .advantages-icons {
-background-color:  #FFFFFF;
+ background-color:  rgba(131, 179, 211, 0.12);
 }
-.advantages-icons:first-child, .advantages-icons:last-child{
-  background-color: rgba(131, 179, 211, 0.12);
+.advantages-icons:nth-child(2){
+  background-color:#FFFFFF;
 }
-
 .advantages-item-blue {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -185,6 +186,9 @@ color: #333333;
   text-align: center; 
   color: #333333;
 }
+.booking {
+  background-color: #FFFFFF;
+}
 .booking-head {
 font-weight: bold;
 font-size: 30px;
@@ -206,6 +210,9 @@ color: #333333;
   border-radius: 10px;
   width: 575px;
   height: 60px;
+}
+.page-footer {
+  background-color: #FFFFFF;
 }
 .newsletter {
   background-image: url(/images/jpeg/background-email.jpg);
@@ -231,6 +238,7 @@ text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
 }
+
 .page-footer-title {
 font-weight: bold;
 font-size: 30px;
@@ -271,9 +279,9 @@ color: #FFFFFF;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #87CEFA;
 }
-.background-catalog {
+.options {
   background-image: url(/images/jpeg/catalog-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -331,6 +339,9 @@ text-align: center;
 border: none;
 background-color: none;
 }
+.hotels-search {
+  background-color: #FFFFFF;
+}
 .hotels-find {
 font-style: normal;
 font-weight: bold;
@@ -354,8 +365,10 @@ color: #333333;
   text-decoration-line: none;
   color: #333333;
 }
+.hotel-list {
+  background-color: #FFFFFF;
+}
 .hotel-card-title {
-font-family: PT Sans;
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
@@ -415,6 +428,9 @@ border-radius: 4px;
 border: none;
 width: 620px;
 height: 60px;
+}
+.pagination-background {
+  background-color: #FFFFFF;
 }
 .button-pagination-show-more {
 font-style: normal;
