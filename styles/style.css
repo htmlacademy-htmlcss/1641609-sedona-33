@@ -31,11 +31,22 @@
   
 body {
     font-family: "PT Sans" , sans-serif;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 21px;
     color: #000000;
-    background-color:#87CEFA;
-  }
+    background-color:#E5E5E5;
+}
+.container {
+ max-width: 1280px;
+ padding-left: 0px;
+ padding-right: 0px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ background-color: #FFFFFF;
+ box-shadow: 0 0 5px;
+}
 .button {
 font-style: normal;
 font-weight: bold;
@@ -47,7 +58,7 @@ text-align: center;
 text-decoration: none;
 text-transform: uppercase
 }
- .main-header {
+ .navigation {
      color: #000000;
      background-color: #FFFFFF;
      
@@ -81,17 +92,13 @@ text-transform: uppercase
 
 .main-background {
     background-image: url(..//images/jpeg/index-background.jpg);
-    background-color: #FFFFFF;
-    color: #000000;
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 485px;
 }
 .main-background-block {
   text-align: center;
-}
-.main-content {
-  background-color: #FFFFFF;
+  
 }
 .main-header-text{
  font-size: 30px;
@@ -148,7 +155,7 @@ color: #FFFFFF;
 display:block;
 margin:auto;
 }
-.advantages-item {
+.container-text {
  background-color: #83B3D3;
 }
 .advantages-icons {
@@ -274,20 +281,13 @@ color: #FFFFFF;
   text-decoration-line: none;
 }
 /* для каталога */
-.page-catalog {
-  font-family: "PT Sans" , sans-serif;
-  font-size: 22px;
-  line-height: 26px;
-  color: #000000;
-  background-color: #87CEFA;
-}
+
 .options {
   background-image: url(/images/jpeg/catalog-background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-.background-catalog {
+  background-size: 100%;
   color: #FFFFFF;
+
 }
 .inner-header-title {
   font-weight: bold;
@@ -307,7 +307,8 @@ color: #FFFFFF
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 26px; 
+  line-height: 26px;
+  color:#FFFFFF; 
   
 }
 .catalog-filter-item , .minprice , .maxprice , .number {
@@ -315,6 +316,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 23px;
+color:#FFFFFF;
 }
 .button-submit {
 font-style: normal;
@@ -339,9 +341,6 @@ text-align: center;
 border: none;
 background-color: none;
 }
-.hotels-search {
-  background-color: #FFFFFF;
-}
 .hotels-find {
 font-style: normal;
 font-weight: bold;
@@ -364,9 +363,6 @@ color: #333333;
   line-height: 21px;
   text-decoration-line: none;
   color: #333333;
-}
-.hotel-list {
-  background-color: #FFFFFF;
 }
 .hotel-card-title {
 font-style: normal;
@@ -428,9 +424,6 @@ border-radius: 4px;
 border: none;
 width: 620px;
 height: 60px;
-}
-.pagination-background {
-  background-color: #FFFFFF;
 }
 .button-pagination-show-more {
 font-style: normal;
