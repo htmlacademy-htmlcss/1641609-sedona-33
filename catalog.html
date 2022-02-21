@@ -31,7 +31,8 @@
     </ul>
   </nav>
 </header>
-<main class="main-inner">
+<main class="main-inner main-container">
+  <div class="page-container">
   <section class="options">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -45,8 +46,9 @@
       </ul>
     </header>
     <section class="catalog-products">
-      <h2 class="visually-hidden">Фильтр видов жилья</h2>
+      <h2 class="visually-hidden" hidden>Фильтр видов жилья</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="ifrastructure-block">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура</legend>
           <ul class="catalog-filter-list">
@@ -70,6 +72,8 @@
             </li>
           </ul>
         </fieldset>
+        </div>
+        <div class="type-of-housing-block">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Тип жилья</legend>
           <ul class="catalog-filter-list">
@@ -93,7 +97,8 @@
             </li>
           </ul>
         </fieldset>
-        <div class="price">Стоимость, ₽:
+        </div>
+        <div class="price"> Стоимость, ₽:
           <label for="minprice">от
             <input type="number" step="1000" min="0"  value="0" id="minprice" name="minprice">
           </label>
@@ -101,8 +106,10 @@
             <input type="number" step="1000" max="9000" value="9000" id="maxprice" name="maxprice">
           </label>
         </div>
+        <div class="button-container">
         <button class="button-submit" type="submit">Применить</button>
         <button class="button-reset" type="reset">Сбросить</button>
+        </div>
       </form>
     </section>
   </section>
@@ -237,6 +244,7 @@
     </select>
   </div>
 </section>
+</div>
 </main>
 <footer class="page-footer">
   <section class="newsletter-catalog">
@@ -248,7 +256,8 @@
       <button class="button newsletter-button" type="submit">Подписаться</button>
     </form>
    </section>
-   <section class="footer-social">
+   <div class="footer-social-block">
+    <section class="footer-social">
      <h2 class="visually-hidden">Мы в социальных сетях</h2>
      <ul class="footer-social-list">
        <li class="footer-social-item">
@@ -271,6 +280,7 @@
     <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
     <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
       <img class="logo-htmlacademy" src="images/svg/logo-html.svg" width="115" height="33" alt="Сайт сделан командой HTML-академией"></a>
+    </div>
   </footer>
   </div>
  </body>
