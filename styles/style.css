@@ -63,6 +63,7 @@ body {
   box-shadow: 0 0 5px;
 }
 .button {
+  display: inline-block;
   margin: 0;
   padding: 0;
   font-style: normal;
@@ -70,10 +71,11 @@ body {
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
-  background-color: #756257;
+  border: none; 
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase
+  text-transform: uppercase;
+  cursor: pointer;
 }
 .main-header {
   display: flex;
@@ -89,6 +91,7 @@ body {
   display: flex;
   width: 345px;
   margin-left: 30px;
+  min-height: 66px;
       
  }
 .navigation-list {
@@ -103,6 +106,8 @@ body {
    flex-wrap: wrap; 
    list-style-type: none;
    margin-left: auto;
+   margin-bottom: 0;
+   margin-top: 0;
  }
  .navigation-link {
    display: block;
@@ -116,18 +121,35 @@ body {
  }
  .navigation-link-user {
    display: block;
-   padding-top: 20px;
    font-size: 16px;
    line-height: 20px; 
    text-align: center;
    text-decoration: none;
  }
+.navigation-link-user:not(:nth-child(3)) {
+  margin-left: 20px;
+  padding-top: 19px;
+  padding-bottom:24px;
+}
+.position-favourites {
+  position: relative;
+  top: -5px;
+  right: 10px;
+}
+.navigation-item-user:nth-child(3) {
+  margin-left: 32px;
+  padding-top: 13px;
+  padding-bottom: 9px;
+}
  .navigation-button {
+   padding: 9px 34px 8px 34px;
    font-size: 16px; 
    line-height: 20px;
    color: #FFFFFF;
    font-weight: bold;
    text-align: center;
+   border-radius: 4px;
+   background-color: #756257;
  }
 .main-background {
   background-image: url(..//images/jpeg/index-background.jpg);
@@ -137,6 +159,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.header-text-block{
+  position: relative;
+}
+.linevector{
+  position: absolute;
+  top: -57px;
 }
 .advantages {
   margin-bottom: 0;
@@ -330,12 +359,12 @@ body {
 }
 .button-modal {  
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  width: 575px;
+  margin: 0 auto;
+  padding: 12px 0 12px 0;
   margin-bottom: 93px;
   border-radius: 10px;
-  width: 575px;
-  height: 60px;
+  background-color: #756257;
 }
 .page-footer {
   background-image: url(../images/jpeg/background-email.jpg);
@@ -413,15 +442,29 @@ body {
   margin-right: 0;
 }
 
-.button-social{
+.footer-social-link {
+  display: block;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
   font-size: 16px;
   color: #000000;
   font-weight: normal;
   text-decoration: none;
 }
+.footer-social-tw {
+  background-image: url(../images/svg/twitter.svg);
+}
+.footer-social-fc {
+  background-image: url(../images/svg/facebook.svg);
+}
+.footer-social-youtube {
+  background-image: url(../images/svg/youtube.svg);
+}
 .contacts-phone {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-left: 61px;
   width:720px;
   font-style: normal;
   font-weight: normal;
@@ -530,15 +573,20 @@ body {
   border-radius: 4px;
   color: #FFFFFF;
   border: none;
+  width: 160px;
+  min-height: 48px;
+  margin-bottom: 20px;
 }
 .button-reset {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   text-align: center;
   border: none;
-  background-color: none;
+  background: transparent;
+  width: 160px;
+  height: 23px;
 }
 .sorting-container {
   display: flex;
@@ -633,6 +681,8 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
+  padding-top: 9px;
+  padding-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -688,10 +738,9 @@ body {
 }
 .button-pagination-show-more {
   width: 620px;
-  margin-top: 47px;
-  margin-bottom: 47px;
-  margin-left: 218px;
-  margin-right: 218px;
+  margin: 47px 218px 47px 218px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   background: #83B3D3;
   border-radius: 4px;
   border: none;
@@ -715,20 +764,21 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  
 }
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
 .pagination-link {
-  display: block;
+  display: flex;
   width: 55px;
-  min-height: 55px;
+  height: 55px;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  padding: 0 auto;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
-  text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
   background-color: #83B3D3;
