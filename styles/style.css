@@ -661,6 +661,9 @@ color: rgba(255, 255, 255, 0.3);
 .breadcrumbs-hotels {
   order: 2;
 }
+.catalog-products {
+  display:flex;
+}
 .catalog-filter {
   display: flex; 
 }
@@ -723,7 +726,7 @@ color: rgba(255, 255, 255, 0.3);
   background-color: #ffffff;
   border-radius: 5px;
   cursor: pointer;
-  border: none
+  border: none;
 }
 .range-toggle:hover {
   background-color: #FFFFFF;
