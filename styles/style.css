@@ -1209,3 +1209,338 @@ margin-right: 0;
   background-color: #FFFFFF;
   min-height: 411px;
 }
+/*модальное окно*/
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 70px;
+  padding-top: 62px;
+  background-color: #ffffff;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-auth {
+ width: 575px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../images/svg/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+} 
+.modal-close-button:hover { 
+  background-color: #E6E6E6;
+}
+.modal-close-button:focus { 
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+.modal-close-button:active { 
+  opacity: 0.6;
+}
+.modal-title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  width: 499px;
+  min-height: 67px;
+}
+.field-description {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  align-items: center;
+  color: #000000;
+  margin: 0;
+}
+.booking-form-date-start {
+  position: relative;
+}
+.booking-form-date-end {
+  position: relative;
+}
+.field-modal {
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  align-items: center;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  padding-left: 19px;
+  padding-right: 193px;
+  margin-bottom: 40px;
+  min-height: 50px;
+}
+.label-modal {
+  position: relative;
+  top: -20px;
+  min-height: 50px;
+  width: 155px;
+}
+.modal-description-calendar {
+  position: absolute;
+  top: 211px;
+  left: 225px;
+  width: 420px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  align-items: center;
+  color: #FF5757;
+  margin: 0;
+  padding: 0;
+}
+.field-modal {
+  position: relative;
+}
+.field-modal:hover {
+  background-color: #E6E6E6;
+  fill: #E6E6E6;
+}
+.field-modal:focus {
+  background-color: #E6E6E6;
+  box-shadow: inset 3px #83B3D3;
+}
+.field-modal:active {
+  box-shadow: inset 2px#000000;
+  background-color: #FFFFFF;
+}
+.button-calendar {
+  position: absolute;
+  left: 517px;
+  top: 0;
+  margin-top: 18px;
+  border: none;
+  cursor: pointer;
+  background-color: #F2F2F2;
+}
+.modal-description-calendar-end {
+  position: absolute;
+  top: 301px;
+  left: 225px;
+  width: 420px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  align-items: center;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+.section-adults-children-modal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.label-modal-number , .label-modal-number-children {
+  position: relative;
+  top: 0px;
+  min-height: 50px;
+  width: 155px;
+}
+.form-label {
+  display: flex;
+}
+.label-modal-number-children {
+  width: 54px;
+  margin-right: 43px;
+  top: 2px;
+}
+.field-modal-addults , .field-modal-children{
+  width:133px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  min-height: 50px;
+  position: relative;
+}
+.form-number-addults{
+  position: relative;
+}
+.button-minus-addults {
+  border: none;
+  position: absolute;
+  padding: 0;
+  background-color: #F2F2F2;
+  left: 173px;
+  top: 0;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.sign:hover {
+  color:#000000;
+}
+.sign:focus {
+  fill:#000000;
+  box-shadow: inset 3px #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.button-pluse-addults {
+  border: none;
+  position: absolute;
+  padding: 0;
+  background-color: #F2F2F2;;
+  left: 256px;
+  top: 0;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.form-number-children{ 
+  position: relative;
+}
+.button-minus-children {
+  border: none;
+  position: absolute;
+  padding: 0;
+  background-color: #F2F2F2;;
+  left: 116px;
+  top: 0;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.button-pluse-children {
+  border: none;
+  position: absolute;
+  padding: 0;
+  background-color: #F2F2F2;;
+  left: 194px;
+  top: 0;
+  margin-top: 15px;
+  cursor: pointer;
+
+}
+.field-modal-children{ 
+  margin: 0;
+}
+.booking-submit {
+  width: 575px;
+  min-height: 60px;
+  background-color: #83B3D3;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+}
+.booking-submit:hover {
+  background-color: #68A2CA;
+  border-radius: 10px;
+}
+.booking-submit:focus {
+  background-color: #68A2CA;
+  border: solid 3px #756257;
+  border-radius: 10px;
+}
+.booking-submit:active{
+  background-color: #68A2CA;
+  color: rgba(242, 242, 242, 0.8);
+  border-radius: 10px;
+
+}
+.tooltip {
+  position: absolute;
+  top: 25%;
+  left: 54px;
+  width: 16px;
+  height: 16px;
+}
+.tooltip-toggle {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  background-color: #83B3D3;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.tooltip-icon {
+  position: relative;
+  left: 12px;
+  color: #FFFFFF;
+  display: block;
+}
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  display: block;
+  width: 216px;
+  min-height: 110px;
+  position: absolute;
+  top: 100%;
+  left: 75%;
+  margin-top: 24px;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+}
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text:after {
+  content:'';
+  background-image: url("../images/svg/tooltip-arrow.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-container-close {
+  display: none;
+}
+
